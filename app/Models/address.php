@@ -5,11 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Skill extends Model
+class address extends Model
 {
     use HasFactory;
-    protected $table = 'Skills';
-    protected $primaryKey = 'Skill_ID';
+    protected $table = 'Address';
+    protected $primaryKey = 'id';
     public $timestamps = false;
-
 }

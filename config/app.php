@@ -67,7 +67,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'America/Los_Angeles',
 
     /*
     |--------------------------------------------------------------------------
@@ -228,5 +228,6 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
     ],
-
+    'jobs_start_time' => env('job_start_time','03:00:00'),
+    'dh_offices' => json_decode(env('dh_offices','[{"name":"portland","address":"1612 SE Holgate Blvd, Portland, OR 97202","lat":"45.490055","lon":"-122.648907"},{"name":"salem","address":"Salem OR","lat":"44.944099","lon":"-123.040283"}]')),
 ];
