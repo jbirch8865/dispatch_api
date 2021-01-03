@@ -17,11 +17,6 @@ class shift extends Model
         return $this->hasMany('App\Models\shift_has_need','shift_id');
     }
 
-    public function shift_has_equipment_needs() : \Illuminate\Database\Eloquent\Relations\HasMany
-    {
-        return $this->hasMany('App\Models\shift_has_equipment_need','shift_id');
-    }
-
     public function shift_has_address() : \Illuminate\Database\Eloquent\Relations\HasOne
     {
         return $this->hasOne('App\Models\address','id','meet_address');
